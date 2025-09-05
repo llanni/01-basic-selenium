@@ -7,9 +7,14 @@ Minimal Maven project to show a first Selenium test using Selenium Manager (no m
 - Maven 3.9+
 - Chrome installed
 
-## Run
+## Run (headless)
 ```bash
-mvn -q -Dheadless=false test
+mvn clean -Dheadless=true test
+```
+
+## Run (browser)
+```bash
+mvn clean -Dheadless=false test
 ```
 
 The test opens SauceDemo (v1), logs in as `standard_user/secret_sauce`, and verifies inventory page.
